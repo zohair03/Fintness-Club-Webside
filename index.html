@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Css Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/background.jpg);
+        height: 100px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        width: 33%;
+        margin: 20px auto;
+        display: block;
+        border: 2px solid yellow;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid green;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 25px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: gray;
+        text-decoration: underline;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(37, 35, 35);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/pngwing.com.png" alt="">
+            <div>Fitness Club</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+</body>
+
+</html>
